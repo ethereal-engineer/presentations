@@ -103,7 +103,7 @@
 
 # Usage Example: John's iPhone
 
-
+```objectivec
 	NSError *error = nil;
 	
 	BMCredentials *credentials = [BMCredentials defaultCredentials:&error];
@@ -119,7 +119,7 @@
 			// Drat
 		}
 	}
-
+```
 ---
 ^ John types in his username and password
 ^ in this case you may not need a url - that's fine
@@ -127,6 +127,7 @@
 
 # Usage Example: John's iPhone
 
+```objectivec
 	BMCredentials *credentials = [[BMCredentials alloc] init];
 	
 	credentials.username 	= @"john.appleseed";
@@ -138,7 +139,8 @@
 	{
 		// ...
 	}
-	
+```
+
 ---
 ^ So the next time app it will find the credentials
 ^ and not show the login screen. great.
